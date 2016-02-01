@@ -9,5 +9,6 @@ describe Sort do
     Sort.sort([2, 1]).should eq([1, 2])
 
     Sort.sort([1, 2, 3]).should eq([1, 2, 3])
+    Sort.sort([2, 1, 3]).should eq([1, 2, 3])
   end
 end
