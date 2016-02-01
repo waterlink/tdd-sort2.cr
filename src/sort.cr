@@ -1,7 +1,8 @@
 module Sort
   def self.sort(a)
-    if a.size > 1 && a[0] > a[1]
-      a[0], a[1] = {a[1], a[0]}
+    i = 0
+    if a.size > i + 1 && a[i] > a[i + 1]
+      a[i], a[i + 1] = {a[i + 1], a[i]}
     end
 
     if a.size > 2 && a[1] > a[2]
