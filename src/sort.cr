@@ -1,6 +1,6 @@
 module Sort
   def self.sort(a)
-    3.times do
+    4.times do
       (a.size - 1).times do |i|
         if a[i] > a[i + 1]
           a[i], a[i + 1] = {a[i + 1], a[i]}
