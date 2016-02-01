@@ -6,7 +6,7 @@ module Sort
       a[0], a[1] = {a[1], a[0]}
     end
 
-    if a[1] > a[2]
+    if a.size > 2 &&  a[1] > a[2]
       a[1], a[2] = {a[2], a[1]}
     end
 
