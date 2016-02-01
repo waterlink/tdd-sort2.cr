@@ -1,0 +1,3 @@
+module Tdd::Sort2
+  VERSION = "0.1.0"
+end
