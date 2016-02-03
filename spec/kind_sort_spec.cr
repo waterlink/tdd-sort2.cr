@@ -14,6 +14,6 @@ describe KindSort do
   it "does not modify original array" do
     a = [2, 1]
     KindSort.sort(a).should eq([1, 2])
-    a.should eq([1, 2])
+    a.should eq([2, 1])
   end
 end
