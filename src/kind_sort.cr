@@ -21,7 +21,7 @@ module KindSort
       end
     end
 
-    left + [a[0]] + sort(right)
+    sort(left) + [a[0]] + sort(right)
   end
 
   private def self.empty
