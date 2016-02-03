@@ -11,14 +11,15 @@ module KindSort
     right = empty
 
     a[1..-1].each do |x|
-      if a[0] > x
-        left << x
-      else
-        right << x
-      end
+      part_for(a[0], x, left, right) << x
     end
 
     {left, right}
+  end
+
+  private def self.part_for(y, x, left, right)
+    return left if y > x
+    right
   end
 
   private def self.empty
