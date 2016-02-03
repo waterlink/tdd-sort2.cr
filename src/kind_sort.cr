@@ -5,11 +5,12 @@ module KindSort
     left = empty
     right = empty
 
-    if a.size > 1
-      if a[0] > a[1]
-        left << a[1]
+    i = 1
+    if a.size > i
+      if a[0] > a[i]
+        left << a[i]
       else
-        right << a[1]
+        right << a[i]
       end
     end
 
