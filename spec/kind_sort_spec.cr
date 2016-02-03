@@ -6,5 +6,6 @@ describe KindSort do
 
   it "sorts" do
     KindSort.sort(empty).should eq(empty)
+    KindSort.sort([1]).should eq([1])
   end
 end
