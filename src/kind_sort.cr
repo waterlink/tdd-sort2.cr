@@ -1,6 +1,6 @@
 module KindSort
   def self.sort(a)
-    empty
+    a
   end
 
   private def self.empty
