@@ -11,6 +11,7 @@ describe KindSort do
     KindSort.sort([2, 1]).should eq([1, 2])
 
     KindSort.sort([1, 2, 3]).should eq([1, 2, 3])
+    KindSort.sort([2, 1, 3]).should eq([1, 2, 3])
   end
 
   it "does not modify original array" do
