@@ -8,5 +8,6 @@ describe KindSort do
     KindSort.sort(empty).should eq(empty)
     KindSort.sort([1]).should eq([1])
     KindSort.sort([1, 2]).should eq([1, 2])
+    KindSort.sort([2, 1]).should eq([1, 2])
   end
 end
