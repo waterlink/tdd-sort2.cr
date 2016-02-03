@@ -3,7 +3,7 @@ module KindSort
     return a if a.size < 1
 
     left = empty
-    right = a[1..-1]
+    right = empty
 
     if a.size > 1
       if a[0] > a[1]
