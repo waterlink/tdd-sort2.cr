@@ -6,21 +6,13 @@ module KindSort
     right = empty
 
     i = 1
-    if a.size > i
+    while a.size > i
       if a[0] > a[i]
         left << a[i]
       else
         right << a[i]
       end
-    end
-
-    i = 2
-    if a.size > i
-      if a[0] > a[i]
-        left << a[i]
-      else
-        right << a[i]
-      end
+      i += 1
     end
 
     sort(left) + [a[0]] + sort(right)
