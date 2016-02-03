@@ -14,11 +14,12 @@ module KindSort
       end
     end
 
-    if a.size > 2
-      if a[0] > a[2]
-        left << a[2]
+    i = 2
+    if a.size > i
+      if a[0] > a[i]
+        left << a[i]
       else
-        right << a[2]
+        right << a[i]
       end
     end
 
