@@ -2,6 +2,11 @@ module KindSort
   def self.sort(a)
     return a if a.size < 1
 
+    left, right = parts(a)
+    sort(left) + [a[0]] + sort(right)
+  end
+
+  private def self.parts(a)
     left = empty
     right = empty
 
@@ -13,7 +18,7 @@ module KindSort
       end
     end
 
-    sort(left) + [a[0]] + sort(right)
+    {left, right}
   end
 
   private def self.empty
