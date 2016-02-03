@@ -5,6 +5,6 @@ describe KindSort do
   empty = [] of Int32
 
   it "sorts" do
-    KindSort.sort(empty)
+    KindSort.sort(empty).should eq(empty)
   end
 end
