@@ -6,7 +6,7 @@ module KindSort
     right = a[1..-1]
 
     if a.size > 1 && a[0] > a[1]
-      left = [a[1]]
+      left << a[1]
       right = a[2..-1]
     end
 
