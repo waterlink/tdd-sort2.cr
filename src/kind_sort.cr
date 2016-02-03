@@ -1,6 +1,6 @@
 module KindSort
   def self.sort(a)
-    #return a if a.size < 1
+    return a if a.size < 1
 
     left = empty
     right = empty
